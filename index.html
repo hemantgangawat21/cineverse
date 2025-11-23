@@ -113,6 +113,13 @@
             z-index: 2;
             pointer-events: none;
         }
+        .logo-cineverse{
+            padding: 0.25rem;
+            background-color:rgba(26,26,26,0);
+            backdrop-filter:blur(2px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+        }
 
         .hero-content {
             position: relative;
@@ -539,7 +546,9 @@
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4 gap-4">
                         <div class="flex items-center space-x-2 flex-shrink-0 cursor-pointer"
                             onclick="window.location.reload()">
-                            <span class="text-2xl md:text-3xl font-extrabold text-white tracking-wide">CineVerse</span>
+                            <div class="logo-cineverse">
+                                <span class="text-2xl md:text-3xl font-extrabold text-white tracking-wide">CineVerse</span>
+                             </div>
                         </div>
 
                         <div class="links hidden lg:flex items-center space-x-1 p-1">
@@ -1596,5 +1605,6 @@
 </body>
 
 </html>
+
 
 
