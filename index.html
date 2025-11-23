@@ -1208,6 +1208,9 @@
 
         function startWatchlistBackgroundCycle(movies) {
             stopBackgroundCycles();
+            // Ensure background is visible
+            document.getElementById('hero-bg-1').style.removeProperty('opacity');
+            document.getElementById('hero-bg-2').style.removeProperty('opacity');
             if (!movies || movies.length === 0) {
                 crossfadeBackground('https://placehold.co/1920x1080/0d0d0d/333333?text=My+Watchlist');
                 return;
@@ -1605,6 +1608,7 @@
 </body>
 
 </html>
+
 
 
 
